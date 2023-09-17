@@ -12,6 +12,17 @@
     "Playfair Display",
     "Shadows Into Light",
     "Yellowtail",
+    "Bungee",
+    "Leckerli One",
+    "Gochi Hand",
+    "Holtwood One SC",
+    "Fredericka the Great",
+    "Kablammo",
+    "Creepster",
+    "Arizonia",
+    "Rubik Moonrocks",
+    "Wallpoet",
+    "Rye"
   ];
 
   function random(min: number, max: number) {
