@@ -83,7 +83,7 @@
 </script>
 
 <main class="h-full bg-black text-white flex justify-center items-center">
-  <div id="effect" class="text-[12rem] gap-[180px] flex justify-center">
+  <div id="effect" class="text-[12rem] flex justify-around w-full">
     {data.text}
   </div>
 </main>
