@@ -34,6 +34,8 @@
     return Math.random() * (max - min) + min;
   }
 
+  let music: HTMLAudioElement;
+
   onMount(() => {
     const container = document.getElementById("effect");
     if (!container) return;
@@ -61,8 +63,14 @@
     }
 
     tick();
-    setInterval(tick, delay);
-    () => setInterval(tick, delay);
+
+    const loop = setInterval(tick, delay);
+    document.addEventListener("click", () => music.play());
+
+    () => {
+      clearInterval(loop);
+      document.removeEventListener("click", () => music.play());
+    }
   });
 </script>
 
@@ -70,4 +78,4 @@
   <div id="effect" class="text-[12rem] gap-[180px] flex justify-center">Loki</div>
 </main>
 
-<audio autoplay loop src="/loki.mp3"></audio>
+<audio loop src="/loki.mp3" bind:this={music}></audio>
