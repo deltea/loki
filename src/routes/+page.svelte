@@ -22,7 +22,12 @@
     "Arizonia",
     "Rubik Moonrocks",
     "Wallpoet",
-    "Rye"
+    "Rye",
+    "Henny Penny",
+    "Pirata One",
+    "Limelight",
+    "Aladin",
+    "Nova Mono",
   ];
 
   function random(min: number, max: number) {
