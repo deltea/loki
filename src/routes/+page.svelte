@@ -55,7 +55,7 @@
 
     function tick() {
       characters.forEach(character => {
-        character.style.fontFamily = fonts[Math.floor(Math.random() * fonts.length)];
+        character.style.fontFamily = `'${fonts[Math.floor(Math.random() * fonts.length)]}', cursive`;
         character.style.textShadow = "#fff 0 0 20px, #fff 0 0 50px";
         character.style.top = `${random(-15, 15)}px`;
         character.style.left = `${random(-10, 10)}px`;
