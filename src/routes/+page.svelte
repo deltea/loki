@@ -35,6 +35,7 @@
   }
 
   let music: HTMLAudioElement;
+  let userInteraction = false;
 
   onMount(() => {
     const container = document.getElementById("effect");
@@ -60,16 +61,20 @@
         character.style.top = `${random(-15, 15)}px`;
         character.style.left = `${random(-10, 10)}px`;
       });
+
+      if (userInteraction) {
+        music.play();
+      }
     }
 
     tick();
 
     const loop = setInterval(tick, delay);
-    document.addEventListener("click", () => music.play());
+    document.addEventListener("click", () => userInteraction = true);
 
     () => {
       clearInterval(loop);
-      document.removeEventListener("click", () => music.play());
+      document.removeEventListener("click", () => userInteraction = true);
     }
   });
 </script>
