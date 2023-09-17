@@ -82,7 +82,7 @@
   });
 </script>
 
-<main class="h-full bg-black text-white flex justify-center items-center">
+<main class="h-full flex justify-center items-center">
   <div id="effect" class="text-[12rem] flex justify-around w-full">
     {data.text}
   </div>
