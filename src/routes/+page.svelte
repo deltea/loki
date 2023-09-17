@@ -1,5 +1,8 @@
 <script lang="ts">
+  import type { PageData } from "./$types";
   import { onMount } from "svelte";
+
+  export let data: PageData;
 
   const fonts = [
     "Anton",
@@ -80,7 +83,9 @@
 </script>
 
 <main class="h-full bg-black text-white flex justify-center items-center">
-  <div id="effect" class="text-[12rem] gap-[180px] flex justify-center">Loki</div>
+  <div id="effect" class="text-[12rem] gap-[180px] flex justify-center">
+    {data.text}
+  </div>
 </main>
 
 <audio loop src="/loki.mp3" bind:this={music}></audio>
