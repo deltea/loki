@@ -1,0 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&family=Croissant+One&family=Fuggles&family=Gloria+Hallelujah&family=Lilita+One&family=Lobster&family=Playfair+Display:wght@400;700&family=Shadows+Into+Light&family=Yellowtail&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
